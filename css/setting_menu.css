@@ -9,7 +9,7 @@
 	justify-self:center;
 	padding:10px;
 	backdrop-filter:blur(10px);
-	transition:.3s ease;
+	transition:transform 1s cubic-bezier(.8,-0.55,.2,1.30);
 }
 
 #settings-menu>section>a{
