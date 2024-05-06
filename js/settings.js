@@ -38,3 +38,4 @@ min_sub.onclick = () => {
     min_num = document.querySelector("input.min.out")
     min_num.value = parseInt(min_num.value) - 1
 }
+
