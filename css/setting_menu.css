@@ -5,11 +5,11 @@
 	flex-direction:column;
 	align-items:center;
 	transform:translateY(100vh);
-	box-shadow:0 0 5px 5px #eeeeee11;
 	border-radius: 2px;
 	justify-self:center;
 	padding:10px;
 	backdrop-filter:blur(10px);
+	box-shadow:0 0 5px 5px var(--shadow);
 	transition:transform 1s cubic-bezier(.8,-0.55,.2,1.30);
 }
 

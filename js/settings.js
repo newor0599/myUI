@@ -39,3 +39,19 @@ min_sub.onclick = () => {
     min_num.value = parseInt(min_num.value) - 1
 }
 
+
+// Dark mode setting
+document.querySelector("input[name='dark-mode']").addEventListener("click",()=>{
+    darkMode = document.querySelector("input[name='dark-mode']").checked
+    const cssRoot = document.documentElement
+    if (darkMode){
+	cssRoot.style.setProperty("--background","#111")
+	cssRoot.style.setProperty("--accent","#ddd")
+	cssRoot.style.setProperty("--shadow","#aaaaaa11")
+    }
+    else{
+	cssRoot.style.setProperty("--background","#ddd")
+	cssRoot.style.setProperty("--accent","#111")
+	cssRoot.style.setProperty("--shadow","#11111111")
+    }
+})

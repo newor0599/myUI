@@ -2,6 +2,7 @@
     --shade-size: 3px;
     --background: #ddd;
     --accent: #111;
+    --shadow: #eeeeee11;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
     font-size:30px;
     font-family:nerd; 
     color:var(--accent);
+    transition: color 1s ease, background 1s ease;
 }
 
 body{
@@ -84,4 +86,10 @@ label[type="checkbox"] > input:checked + span{
     transform:rotate(45deg);
     background:var(--accent);
     box-shadow: 0 0 0 0 var(--accent);
+}
+
+
+::selection{
+    background:var(--accent);
+    color:var(--background);
 }
